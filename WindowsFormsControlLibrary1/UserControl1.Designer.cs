@@ -43,6 +43,9 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -134,7 +137,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Coral;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.label4.Location = new System.Drawing.Point(836, 380);
+            this.label4.Location = new System.Drawing.Point(787, 353);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(123, 25);
             this.label4.TabIndex = 4;
@@ -145,9 +148,9 @@
             // 
             this.button4.BackColor = System.Drawing.Color.Crimson;
             this.button4.Enabled = false;
-            this.button4.Location = new System.Drawing.Point(756, 443);
+            this.button4.Location = new System.Drawing.Point(695, 407);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(88, 23);
+            this.button4.Size = new System.Drawing.Size(126, 59);
             this.button4.TabIndex = 5;
             this.button4.Text = "недоступен";
             this.button4.UseVisualStyleBackColor = false;
@@ -155,9 +158,9 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(913, 443);
+            this.button5.Location = new System.Drawing.Point(886, 407);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(102, 23);
+            this.button5.Size = new System.Drawing.Size(136, 57);
             this.button5.TabIndex = 5;
             this.button5.Text = "Кликни сюда";
             this.button5.UseVisualStyleBackColor = true;
@@ -165,9 +168,9 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(841, 472);
+            this.button6.Location = new System.Drawing.Point(808, 485);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.Size = new System.Drawing.Size(100, 46);
             this.button6.TabIndex = 5;
             this.button6.Text = "Форма 2";
             this.button6.UseVisualStyleBackColor = true;
@@ -176,18 +179,53 @@
             // button7
             // 
             this.button7.ForeColor = System.Drawing.Color.Crimson;
-            this.button7.Location = new System.Drawing.Point(841, 528);
+            this.button7.Location = new System.Drawing.Point(806, 604);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.Size = new System.Drawing.Size(104, 35);
             this.button7.TabIndex = 5;
             this.button7.Text = "Exit";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(808, 551);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(111, 34);
+            this.button8.TabIndex = 6;
+            this.button8.Text = "Задача №3";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button9
+            // 
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.button9.Location = new System.Drawing.Point(65, 530);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(167, 33);
+            this.button9.TabIndex = 7;
+            this.button9.Text = "Лаба №5.1";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button10
+            // 
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.button10.Location = new System.Drawing.Point(65, 586);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(167, 38);
+            this.button10.TabIndex = 8;
+            this.button10.Text = "Лаба №5.2";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
             // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button10);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -226,5 +264,8 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
     }
 }

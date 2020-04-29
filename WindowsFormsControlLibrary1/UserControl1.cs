@@ -60,14 +60,32 @@ namespace WindowsFormsControlLibrary1
         private void button6_Click(object sender, EventArgs e)
         {
 
-            Form2 f2 = new Form2();
-            f2.ShowDialog();
+            Form1 f1 = new Form1();
+            f1.ShowDialog();
 
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Form3 f3 = new Form3();
+            f3.ShowDialog();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Form2 f3 = new Form2();
+            f3.ShowDialog();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Form5 f3 = new Form5();
+            f3.ShowDialog();
         }
     }
 }

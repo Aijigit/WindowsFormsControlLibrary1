@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsControlLibrary1
 {
-    public partial class Form2 : Form
+    public partial class Form5 : Form
     {
-        public Form2()
+        public Form5()
         {
             InitializeComponent();
         }
@@ -20,36 +20,25 @@ namespace WindowsFormsControlLibrary1
         private void button1_Click(object sender, EventArgs e)
         {
             var sourceValue = textBox1.Text;
-             double doubleValue;
-            if (double.TryParse(sourceValue, out doubleValue))
+            int doubleValue;
+            if (int.TryParse(sourceValue, out doubleValue))
             {
-                if (doubleValue >= 8.00 && doubleValue < 12.00)
+                string message;
+                if (doubleValue >= 25 )
                 {
-                    label2.Text = "Доброе утро!";
-
-                } else if (doubleValue >= 12.00 && doubleValue < 17.00)
-                {
-                    label2.Text = "Добрый день!";
+                    message = "Можешь идти в школу. Желаю успехов!";
+                    MessageBox.Show(message);
                 }
-                else if (doubleValue >= 17.00 && doubleValue <= 23.59 )
+                else
                 {
-                    label2.Text = "Добрый вечер!";
-                } else
-                {
-                    label2.Text = "Добрый ночь!";
+                    message = "Занятия в школе отменяются!";
+                    MessageBox.Show(message);
                 }
             }
             else
             {
                 // Here you can display an error message like 'Invalid value'
             }
-            
-
-        }
-
-        private void bindingNavigator1_RefreshItems(object sender, EventArgs e)
-        {
-
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -59,11 +48,6 @@ namespace WindowsFormsControlLibrary1
                 MessageBox.Show("Please enter only numbers.");
                 textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
             }
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

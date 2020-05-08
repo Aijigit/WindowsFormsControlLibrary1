@@ -84,8 +84,14 @@ namespace WindowsFormsControlLibrary1
 
         private void button10_Click(object sender, EventArgs e)
         {
-            Form5 f3 = new Form5();
+            Form6 f3 = new Form6();
             f3.ShowDialog();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            Form8 f8 = new Form8();
+            f8.Show();
         }
     }
 }

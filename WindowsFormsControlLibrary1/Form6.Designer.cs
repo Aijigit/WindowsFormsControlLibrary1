@@ -44,10 +44,10 @@
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.statusStrip2 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.statusStrip2 = new System.Windows.Forms.StatusStrip();
             this.Timer = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -83,33 +83,33 @@
             this.newCToolStripMenuItem,
             this.existingToolStripMenuItem});
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.openToolStripMenuItem.Text = "Open";
             // 
             // newCToolStripMenuItem
             // 
             this.newCToolStripMenuItem.Name = "newCToolStripMenuItem";
-            this.newCToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newCToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.newCToolStripMenuItem.Text = "New   Ctrl+N";
             // 
             // existingToolStripMenuItem
             // 
             this.existingToolStripMenuItem.Name = "existingToolStripMenuItem";
-            this.existingToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.existingToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.existingToolStripMenuItem.Text = "Existing";
             this.existingToolStripMenuItem.Click += new System.EventHandler(this.existingToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // exitCtrlF10ToolStripMenuItem
             // 
             this.exitCtrlF10ToolStripMenuItem.Name = "exitCtrlF10ToolStripMenuItem";
-            this.exitCtrlF10ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitCtrlF10ToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.exitCtrlF10ToolStripMenuItem.Text = "Exit   Ctrl+F10";
             this.exitCtrlF10ToolStripMenuItem.Click += new System.EventHandler(this.exitCtrlF10ToolStripMenuItem_Click);
             // 
@@ -130,9 +130,9 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(87, 190);
+            this.pictureBox1.Location = new System.Drawing.Point(55, 102);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(374, 206);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -176,14 +176,6 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(59, 17);
             this.toolStripStatusLabel1.Text = "Status Bar";
             // 
-            // statusStrip2
-            // 
-            this.statusStrip2.Location = new System.Drawing.Point(0, 438);
-            this.statusStrip2.Name = "statusStrip2";
-            this.statusStrip2.Size = new System.Drawing.Size(868, 22);
-            this.statusStrip2.TabIndex = 5;
-            this.statusStrip2.Text = "statusStrip2";
-            // 
             // toolStripStatusLabel2
             // 
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
@@ -202,6 +194,14 @@
             this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
             this.toolStripStatusLabel4.Size = new System.Drawing.Size(33, 17);
             this.toolStripStatusLabel4.Text = "Time";
+            // 
+            // statusStrip2
+            // 
+            this.statusStrip2.Location = new System.Drawing.Point(0, 438);
+            this.statusStrip2.Name = "statusStrip2";
+            this.statusStrip2.Size = new System.Drawing.Size(868, 22);
+            this.statusStrip2.TabIndex = 5;
+            this.statusStrip2.Text = "statusStrip2";
             // 
             // Timer
             // 

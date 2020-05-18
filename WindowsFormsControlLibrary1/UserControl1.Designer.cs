@@ -47,6 +47,7 @@
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -222,19 +223,31 @@
             // 
             // button11
             // 
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.button11.Location = new System.Drawing.Point(65, 604);
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.button11.Location = new System.Drawing.Point(262, 551);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(167, 47);
+            this.button11.Size = new System.Drawing.Size(148, 38);
             this.button11.TabIndex = 9;
-            this.button11.Text = "Лаба 5.3";
+            this.button11.Text = "Лаба 6.1";
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // button12
+            // 
+            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.button12.Location = new System.Drawing.Point(262, 498);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(148, 33);
+            this.button12.TabIndex = 10;
+            this.button12.Text = "Лаба 6";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button12);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
@@ -281,5 +294,6 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
     }
 }

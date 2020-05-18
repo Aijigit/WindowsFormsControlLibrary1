@@ -23,43 +23,76 @@ namespace WindowsFormsControlLibrary1
             int a;
             int dollars, cents;
             a = Convert.ToInt32(textBox1.Text);
-           
-            dollars = a / 100;
-            cents = a % 100;
-            label2.Text = dollars.ToString();
-            label3.Text = cents.ToString();
+            if (a > 99999)
+            {
+                MessageBox.Show("Введите число меньше 100000!");
+                textBox1.Text = "";
+            }
+            else
+            {
+                dollars = a / 100;
+                cents = a % 100;
+                label2.Text = dollars.ToString();
+                label3.Text = cents.ToString();
+            }
+            
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             if (System.Text.RegularExpressions.Regex.IsMatch(textBox1.Text, "[^0-9][^.][^0-9]"))
             {
                 MessageBox.Show("Please enter only numbers.");
-                textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
+                textBox1.Text = "";
             }
         }
-        double dollAr(double dollar)
-        {
-            double res, som = 80;
-            dollar = Convert.ToDouble(textBox2.Text);
-            res = dollar * som;
-            return res;
-        }
-        double euRo(double dollar)
-        {
-            double res, som = 87;
-            dollar = Convert.ToDouble(textBox3.Text);
-            res = dollar * som;
-            return res;
-        }
+       
         private void button2_Click(object sender, EventArgs e)
         {
-            double res, dollar, euro, euroResult;
+            Valuta valuta = new Valuta();
+            double  dollar,som;
             dollar = Convert.ToDouble(textBox2.Text);
-            euro = Convert.ToDouble(textBox3.Text);
-            res = dollAr(dollar);
-            euroResult = euRo(euro);
-            label6.Text = res.ToString();
-            label7.Text = euroResult.ToString();
+            som = Convert.ToDouble(textBox3.Text);
+            label6.Text = valuta.dollAr(dollar, som).ToString();
+           
+           
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Valuta valuta = new Valuta();
+            double dollar, som;
+            dollar = Convert.ToDouble(textBox2.Text);
+            som = Convert.ToDouble(textBox3.Text);
+            label6.Text = valuta.euRo(dollar, som).ToString();
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Valuta valuta = new Valuta();
+            double dollar, som;
+            dollar = Convert.ToDouble(textBox2.Text);
+            som = Convert.ToDouble(textBox3.Text);
+            label6.Text = valuta.Sum(dollar, som).ToString();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Valuta valuta = new Valuta();
+            double dollar, som;
+            dollar = Convert.ToDouble(textBox2.Text);
+            som = Convert.ToDouble(textBox3.Text);
+           
+            label6.Text = valuta.Tenge(dollar, som).ToString();
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(textBox1.Text, "[^0-9][^.][^0-9]"))
+            {
+                MessageBox.Show("Please enter only numbers.");
+                textBox1.Text = "";
+            }
         }
     }
 }

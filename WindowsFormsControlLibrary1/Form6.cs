@@ -13,6 +13,7 @@ namespace WindowsFormsControlLibrary1
 {
     public partial class Form6 : Form
     {
+        Image File;
         public Form6()
         {
             InitializeComponent();
@@ -38,18 +39,20 @@ namespace WindowsFormsControlLibrary1
             dialog.Filter = "Image files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png) | *.jpg; *.jpeg; *.jpe; *.jfif; *.png";
             dialog.InitialDirectory = "C:";
             dialog.ShowDialog();
-            pictureBox1.Image = Image.FromFile(dialog.FileName);
+            File = Image.FromFile(dialog.FileName);
+            pictureBox1.Image = File;
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveDialog = new SaveFileDialog();
-            saveDialog.Filter = "All Files(*.*)|*.*";
-            saveDialog.ShowDialog();
-            if (saveDialog.FileName != "")
+            saveDialog.Title = "Save";
+            saveDialog.Filter = "Text Files (*.txt)|*.txt" + "|" +
+                                "Image Files (*.png;*.jpg)|*.png;*.jpg" + "|" +
+                                "All Files (*.*)|*.*";
+            if (saveDialog.ShowDialog() == DialogResult.OK)
             {
-                MessageBox.Show("Выбран файл с именем" + saveDialog.FileName);
-           
+                File.Save(saveDialog.FileName);
             }
         }
 

@@ -19,35 +19,21 @@ namespace WindowsFormsControlLibrary1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var sourceValue = textBox1.Text;
-            int doubleValue;
-            if (int.TryParse(sourceValue, out doubleValue))
+            int celc = Convert.ToInt32(textBox1.Text);
+
+            if(celc > 25 && celc < 43)
             {
-                string message;
-                if (doubleValue >= 25 )
-                {
-                    message = "Можешь идти в школу. Желаю успехов!";
-                    MessageBox.Show(message);
-                }
-                else
-                {
-                    message = "Занятия в школе отменяются!";
-                    MessageBox.Show(message);
-                }
+                MessageBox.Show("Можешь идьти в школу!");
             }
             else
             {
-                // Here you can display an error message like 'Invalid value'
+                MessageBox.Show("Занятие отменяются!");
             }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if (System.Text.RegularExpressions.Regex.IsMatch(textBox1.Text, "[^0-9][^.][^0-9]"))
-            {
-                MessageBox.Show("Please enter only numbers.");
-                textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
-            }
+
         }
     }
 }
